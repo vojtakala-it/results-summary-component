@@ -2,8 +2,17 @@
 
 * { box-sizing: border-box }
 
+@font-face {
+    font-family: 'Hanken Grotesk';
+    src: url('../assets/fonts/static/HankenGrotesk-Bold.ttf') format('trueType');
+}
+
+:root {
+    --font-fallback: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", sans-sans;
+}
+
 html,
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Hanken Grotesk', var(--font-fallback);
     font-size: 16px;
 }

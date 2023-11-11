@@ -4,6 +4,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 const isProduction = process.env.NODE_ENV == "production";
 const stylesHandler = isProduction ? MiniCssExtractPlugin.loader : "style-loader";
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 
 const config = {
@@ -42,6 +43,19 @@ const config = {
             {
                 test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,
                 type: "asset"
+            },
+            {
+                test: /\.(png|jpe?g|gif|svg)$/i,
+                use: [
+                    {
+                        loader: 'url-loader',
+                        options: {
+                            name: 'assets/images[hash]-[name].[ext]',
+                            limit: 8192,
+                            fallback: 'file-loader'
+                        }
+                    }
+                ]
             }
 
             // Add your rules for custom modules here
@@ -51,6 +65,14 @@ const config = {
 };
 
 module.exports = () => {
+    config.plugins.push(
+        new CopyWebpackPlugin({
+            patterns: [
+                { from: 'src/assets/images', to: 'img' },
+            ]
+        })
+    )
+
     if (isProduction) {
         config.mode = "production";
 
