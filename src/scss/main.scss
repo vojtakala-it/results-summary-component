@@ -1,18 +1,62 @@
 @import "reset";
+@import "variables";
+@import "result-container";
+@import "summary-container";
+
+@supports not (font-variation-settings: normal) {
+    @font-face {
+        font-family: $primaryFont, $fontFallback;
+        src: url('../assets/fonts/static/HankenGrotesk-Medium.ttf');
+        font-weight: 500;
+    }
+    @font-face {
+        font-family: $primaryFont, $fontFallback;
+        src: url('../assets/fonts/static/HankenGrotesk-Bold.ttf');
+        font-weight: bold;
+    }
+    @font-face {
+        font-family: $primaryFont, $fontFallback;
+        src: url('../assets/fonts/static/HankenGrotesk-ExtraBold.ttf');
+        font-weight: 800;
+    }
+}
+
+@supports (font-variation-settings: normal) {
+    @font-face {
+        font-family: $primaryFont, $fontFallback;
+        src: url('../assets/fonts/HankenGrotesk-VariableFont_wght.ttf') format('trueType');
+        font-weight: 100 900;
+    }
+}
 
 * { box-sizing: border-box }
 
-@font-face {
-    font-family: 'Hanken Grotesk';
-    src: url('../assets/fonts/static/HankenGrotesk-Bold.ttf') format('trueType');
-}
-
-:root {
-    --font-fallback: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", sans-sans;
-}
-
 html,
 body {
-    font-family: 'Hanken Grotesk', var(--font-fallback);
+    font-family: $primaryFont, $fontFallback;
     font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: hsl(0, 0%, 95%);
+
+    .main-container {
+        background-color: hsl(0, 0%, 97%);
+        display: inline-grid;
+        grid-template-columns: 50% 50%;
+        border-radius: 20px;
+        width: 475px;
+        box-shadow: 5px 5px 10px hsla(0, 0%, 70%, 0.1);
+    }
+
+    @media screen and (max-width: 768px) {
+        .main-container {
+            margin-top: 60px;
+            grid-template-columns: 100%;
+            max-width: 100%;
+            height: auto;
+        }
+    }
 }

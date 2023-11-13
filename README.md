@@ -80,7 +80,6 @@ Use this section to outline areas that you want to continue focusing on in futur
 ### Useful resources
 * post examples here, if something helped you
 
-
 ### Author
 
 * Website -
@@ -93,15 +92,6 @@ Use this section to outline areas that you want to continue focusing on in futur
 This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
 
 **Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
-
-
-
-### How to proceed (DELETE this when done)
-
-1. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-2. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-3. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-4. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
 
 ## Submitting your solution
 

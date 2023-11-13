@@ -1,0 +1,93 @@
+.summary-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 25px 0;
+    border-radius: inherit;
+
+    .summary-heading {
+        margin-top: 15px;
+        text-align: left;
+        color: hsl(220, 50%, 20%);
+        font-weight: 800;
+    }
+
+    .summarized-results-container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        max-width: 100%;
+
+        .result {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 12px;
+            padding: 10px;
+            border-radius: 8px;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 0.01px;
+
+            div {
+                display: inherit;
+                align-items: inherit;
+
+                img {
+                    padding-right: 10px;
+                }
+            }
+
+            .result-score {
+                color: hsl(220, 50%, 20%);
+
+                span {
+                    color: hsl(0, 0%, 65%);
+                    margin-left: 4px;
+                    letter-spacing: 0.01px;
+                }
+            }
+        }
+
+        .reaction-result {
+            color: hsl(10, 70%, 50%);
+            background-color: hsla(10, 70%, 90%, 0.3);
+        }
+
+        .memory-result {
+            color: hsl(47, 90%, 50%);
+            background-color: hsla(47, 70%, 90%, 0.5);
+        }
+
+        .verbal-result {
+            color: hsl(155, 58%, 50%);
+            background-color: hsla(155, 48%, 90%, 0.5);
+        }
+
+        .visual-result {
+            color: hsl(220, 80%, 40%);
+            background-color: hsla(220, 48%, 90%, 0.5);
+        }
+
+        .summary-btn {
+            border-radius: 25px;
+            color: hsl(0, 0%, 97%);
+            background-color: hsl(220, 70%, 25%);
+            font-size: 11px;
+            font-weight: 550;
+            border: none;
+            padding: 13px;
+            margin: 13px 0 0;
+
+            &:hover {
+                cursor: pointer;
+                background-color: hsla(220, 80%, 55%, 0.5);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .summary-container {
+        margin-bottom: 50px;
+    }
+}
