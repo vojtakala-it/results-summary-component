@@ -32,19 +32,19 @@ Users should be able to:
 - See hover and focus states for all interactive elements on the page
 - **Bonus**: Use the local JSON data to dynamically populate the content
 
-### Screenshot
-
-**Delete this line**: add a screenshot when you're done
-To take the screenshot you can use tool such as [FireShot](https://getfireshot.com/)
-
-![](./screenshot.jpg)
-
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-link.com)
-- Live Site URL: [Add live site URL here](https://your-site.com)
+- Solution URL: [GitHub Repo](https://github.com/vojtakala-it/results-summary-component)
+- Live Site URL: [Result Summary Component](https://results-summary-component-git-master-n3eys-projects.vercel.app/)
 
 ## My process
+
+I began thinking about how to set up the layout and then wrote the HTML.
+When I was done, I started styling the template.
+What I did wrong is that I started styling from 1000+ resolution, next time I should start with mobile version first.
+I spend a lot of time thinking about how to write my CSS in a better and more clear way.
+Also fixing and tuning the responsive design was also a pain that took my a long time.
+But I'm getting better, baby steps.
 
 ### Built with
 
@@ -55,55 +55,23 @@ To take the screenshot you can use tool such as [FireShot](https://getfireshot.c
 - ES5
 - Webpack
 
-### What I learned
-
-* Fonts, @face-font
-
-add code snippets, like the following:
-
-```html
-<h1>Hey I am HTML</h1>
-```
-```css
-h1 {
-    font-weight: bold;
-}
-```
-```js
-const myJs = document.querySelector('.yay');
-```
-
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-### Useful resources
-* post examples here, if something helped you
+* Have to improve my skills regarding responsive design
+  * So many answers I still haven't found the best answer for
+    * when/how to use em/rem and why ?
+    * when/how to use vmin/vmax or vw/vh and why ?
+    * what about setting values in % ?
+    * how to combine CSS Grid with Flexbox effectively and why ?
+* Have to improve my skills regarding CSS animations and transitions
+* Have to get faster at writing HTML & CSS
+* Have to use JS more and get more proficient at it
+* How to structure your CSS the best way ?
+  * What about syntax, should I keep using nesting ?
+  * What about SCSS and its variables vs pure CSS and its variables ?
 
 ### Author
 
-* Website -
-* Linkedin -
-* Github -
-* Frontend Mentor -
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
-
-## Submitting your solution
-
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
-
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
-
-## Sharing your solution
-
-There are multiple places you can share your solution:
-
-1. Share your solution page in the **#finished-projects** channel of the [Slack community](https://www.frontendmentor.io/slack).
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
+* [LinkedIn](https://www.linkedin.com/in/vojt%C4%9Bch-kala-43438b215/)
+* [GitHub Profile](https://github.com/vojtakala-it)
+* [Frontend Mentor Profile](https://www.frontendmentor.io/profile/vojtakala-it)
