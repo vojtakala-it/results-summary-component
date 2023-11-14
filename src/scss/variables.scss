@@ -2,9 +2,25 @@
 $primaryFont: 'Hanken Grotesk', 'sans-serif';
 $fontFallback: 'Arial', 'Helvetica', 'sans-serif';
 
-// font size
+// font weight
+$strongRegular: 550;
+$weakMedium: 600;
+$medium: 650;
+$bold: 700;
+$extraBold: 800;
 
-// colors
-// white default main, probably also used for bg
-// shade of white default main
-// bluish to purplish bg
+// font colors:
+$snowWhite: hsl(0, 0%, 97%);
+$dirtySnow: hsl(0, 0%, 75%);
+$dirtySnowDark: hsl(0, 0%, 65%);
+$dirtySnowDarkest: hsl(0, 0%, 55%);
+$midnightDark: hsl(220, 50%, 20%);
+
+// bg colors
+$mainBgColor: hsl(0, 0%, 95%);
+$componentBgColor: hsl(0, 0%, 97%);
+$resultContainerGradientBg: linear-gradient(0deg, hsl(240, 70%, 53%) 38%, hsl(250, 70%, 55%) 80%);
+$circleContainerGradientBg: linear-gradient(0deg, hsl(240, 70%, 53%) 15%, hsl(250, 70%, 50%), hsl(250, 60%, 45%) 96%);
+
+// shadows
+$componentBoxShadow: 5px 5px 10px hsla(0, 0%, 70%, 0.1);

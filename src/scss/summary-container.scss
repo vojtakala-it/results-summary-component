@@ -1,49 +1,46 @@
+@import "variables";
+
 .summary-container {
     display: flex;
     flex-direction: column;
-    padding: 10px 25px 0;
+    padding: 8%;
     border-radius: inherit;
 
     .summary-heading {
-        margin-top: 15px;
         text-align: left;
-        color: hsl(220, 50%, 20%);
-        font-weight: 800;
+        color: $midnightDark;
     }
 
     .summarized-results-container {
-        display: flex;
-        flex-direction: column;
-        margin-top: 20px;
-        max-width: 100%;
+        display: inherit;
+        flex-direction: inherit;
+        margin-top: 4vmin;
 
         .result {
-            display: flex;
+            display: inherit;
             align-items: center;
             justify-content: space-between;
-            margin-bottom: 12px;
-            padding: 10px;
-            border-radius: 8px;
-            font-size: 12px;
-            font-weight: 700;
-            letter-spacing: 0.01px;
+            margin-bottom: 2vmin;
+            padding: 2vmin;
+            border-radius: 1vmin;
+            font-size: 20px;
+            font-weight: $bold;
 
             div {
                 display: inherit;
                 align-items: inherit;
 
                 img {
-                    padding-right: 10px;
+                    padding-right: 1.5vmin;
                 }
             }
 
             .result-score {
-                color: hsl(220, 50%, 20%);
+                color: $midnightDark;
 
                 span {
-                    color: hsl(0, 0%, 65%);
-                    margin-left: 4px;
-                    letter-spacing: 0.01px;
+                    color: $dirtySnowDark;
+                    margin-left: 1vmin;
                 }
             }
         }
@@ -69,25 +66,19 @@
         }
 
         .summary-btn {
-            border-radius: 25px;
-            color: hsl(0, 0%, 97%);
-            background-color: hsl(220, 70%, 25%);
-            font-size: 11px;
-            font-weight: 550;
+            margin-top: 3vmin;
+            padding: 2.5vmin;
             border: none;
-            padding: 13px;
-            margin: 13px 0 0;
+            border-radius: 10vmin;
+            font-size: 25px;
+            font-weight: $strongRegular;
+            color: $snowWhite;
+            background-color: hsl(220, 70%, 25%);
 
             &:hover {
                 cursor: pointer;
                 background-color: hsla(220, 80%, 55%, 0.5);
             }
         }
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .summary-container {
-        margin-bottom: 50px;
     }
 }
