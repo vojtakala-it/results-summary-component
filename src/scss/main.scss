@@ -41,13 +41,21 @@ body {
     font-family: $primaryFont, $fontFallback;
     background-color: $mainBgColor;
 
-    .main-container {
-        position: relative;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        border-radius: 4vmin;
-        box-shadow: $componentBoxShadow;
-        background-color: $componentBgColor;
+    main {
+        display: inherit;
+        flex-direction: inherit;
+        align-items: inherit;
+        justify-content: inherit;
+        overflow-y: hidden;
+
+        .main-container {
+            position: relative;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            border-radius: 4vmin;
+            box-shadow: $componentBoxShadow;
+            background-color: $componentBgColor;
+        }
     }
 }
 
@@ -64,60 +72,62 @@ h1 {
 
 @media only screen and (max-width: 650px) {
     body {
-        .main-container {
-            grid-template-columns: 1fr;
-            width: 100vw;
-            max-height: 100%;
-            top: 0;
-            z-index: 100;
-            border-radius: 0  0 4vmin 4vmin;
-            overflow-y: auto;
+        main {
+            .main-container {
+                grid-template-columns: 1fr;
+                width: 100vw;
+                max-height: 100vh;
+                top: 0;
+                z-index: 100;
+                border-radius: 0  0 4vmin 4vmin;
+                overflow-y: auto;
 
-            .result-container {
-                padding: 10vw 4vw;
+                .result-container {
+                    padding: 10vw 4vw;
 
-                .score-container {
-                    margin-top: 30px;
+                    .score-container {
+                        margin-top: 30px;
 
-                    .circle-container {
-                        width: 200px;
-                        height: 200px;
-                        font-size: 25px;
+                        .circle-container {
+                            width: 200px;
+                            height: 200px;
+                            font-size: 25px;
 
-                        .score-number {
-                            padding-bottom: 15px;
-                            font-size: 75px;
+                            .score-number {
+                                padding-bottom: 15px;
+                                font-size: 75px;
+                            }
+                        }
+                    }
+
+                    .result-info {
+                        .result-text {
+                            white-space: normal;
+                            line-height: 30px;
                         }
                     }
                 }
 
-                .result-info {
-                    .result-text {
-                        white-space: normal;
-                        line-height: 30px;
-                    }
-                }
-            }
+                .summary-container {
+                    margin-top: 15px;
+                    padding-bottom: 50px;
 
-            .summary-container {
-                margin-top: 15px;
-                padding-bottom: 50px;
+                    .summarized-results-container {
+                        margin-top: 30px;
 
-                .summarized-results-container {
-                    margin-top: 30px;
+                        .result {
+                            margin-bottom: 15px;
+                            padding: 20px;
+                            border-radius: 15px;
 
-                    .result {
-                        margin-bottom: 15px;
-                        padding: 20px;
-                        border-radius: 15px;
-
-                        div img {
-                            padding-right: 13px;
+                            div img {
+                                padding-right: 13px;
+                            }
                         }
-                    }
 
-                    .summary-btn {
-                        padding: 20px;
+                        .summary-btn {
+                            padding: 20px;
+                        }
                     }
                 }
             }
@@ -136,17 +146,19 @@ h1 {
 
 @media only screen and (max-width: 400px) {
     body {
-        .main-container {
-            .result-container {
-                .result-info {
-                    .result-quote {
-                        font-size: 33px;
-                    }
+        main {
+            .main-container {
+                .result-container {
+                    .result-info {
+                        .result-quote {
+                            font-size: 33px;
+                        }
 
-                    .result-text {
-                        white-space: nowrap;
-                        font-size: 18px;
-                        line-height: 26px;
+                        .result-text {
+                            white-space: nowrap;
+                            font-size: 18px;
+                            line-height: 26px;
+                        }
                     }
                 }
             }
