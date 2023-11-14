@@ -3,19 +3,26 @@ import { documentReady } from "./documentReady";
 import { prepareScoreData } from "./result-data";
 
 documentReady(() => {
-    window.addEventListener("load", () => { prepareScoreData() });
-    // window.addEventListener("resize", () => updateIconSizes());
+    window.addEventListener("load", () => {
+        prepareScoreData();
+        updateResultText();
+    });
+    window.addEventListener("resize", () => updateResultText());
 });
 
-function updateIconSizes() {
-    const icons = document.querySelectorAll('.result div img');
+function updateResultText() {
+    const resultTextEl = document.querySelector('.result-text');
 
-    icons.forEach(icon => {
-        const parentWidth = icon.parentElement.clientWidth;
-        const width = parentWidth * 0.25;
-
-        icon.setAttribute('width', width);
-        icon.setAttribute('height', 'auto');
-    });
+    if (window.innerWidth <= 650) {
+        resultTextEl.innerHTML = `
+            You scored higher than 65% of the<br>
+            people who have taken these tests.
+        `;
+    } else {
+        resultTextEl.innerHTML = `
+            You scored higher than 65% of<br>
+            the people who have taken<br>
+            these tests.
+        `;
+    }
 }
-

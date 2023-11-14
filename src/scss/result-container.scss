@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 8% 4vmin;
+    padding: 4vw 4vw;
     border-radius: inherit;
     color: $snowWhite;
     background: $resultContainerGradientBg;
@@ -13,25 +13,25 @@
         display: inherit;
         flex-direction: inherit;
         align-items: inherit;
-        width: 100%;
         justify-content: center;
-        margin-top: 30px;
+        margin-top: 4.5vmin;
 
         .circle-container{
             display: inherit;
             flex-direction: inherit;
             align-items: inherit;
             justify-content: inherit;
-            width: 50%;
+            width: 200px;
+            height: 200px;
             border-radius: 50%;
-            font-size: 15px;
+            font-size: 22px;
             font-weight: $weakMedium;
             color: $dirtySnowDarkest;
             background: $circleContainerGradientBg;
 
             .score-number {
-                padding-bottom: 15px;
-                font-size: 45px;
+                padding-bottom: 1vmin;
+                font-size: 85px;
                 font-weight: $bold;
                 color: $snowWhite;
             }
@@ -56,8 +56,8 @@
             margin-top: 3vmin;
             font-size: 22px;
             font-weight: $weakMedium;
-            line-height: 30px;
-            color: $dirtySnowDark;
+            line-height: 15px;
+            color: $dirtySnow;
         }
     }
 }
